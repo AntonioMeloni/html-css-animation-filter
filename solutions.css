@@ -80,6 +80,7 @@
 .ex-10-icon {
     animation: ruota 2s linear infinite;
 }
+
 @keyframes ruota {
     0% {
         transform: rotate(1turn);
@@ -89,6 +90,7 @@
 .ex-11-icon:hover{
     animation: ruota2 2s linear;
 }
+
 @keyframes ruota2 {
     0% {
         transform: rotate(0turn);
@@ -101,5 +103,46 @@
     }
     75% {
         transform: rotate(0.75turn);
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: spostadx 1s linear;
+}
+
+@keyframes spostadx {
+    /* 0% {
+        right: 0%;
+    } */
+    25% {
+        right: 25%;
+    }
+    50% {
+        right: 50%;
+    }
+    75 {
+        right: 75%;
+    }
+    100% {
+        right: 25%;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: spostasx 1s linear;
+}
+
+@keyframes spostasx {
+    25% {
+        left: 25%;
+    }
+    50% {
+        left: 50%;
+    }
+    75 {
+        left: 75%;
+    }
+    100% {
+        left: 25%;
     }
 }
